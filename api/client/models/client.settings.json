@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "clients",
   "info": {
-    "name": "client"
+    "name": "client",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,9 +17,9 @@
       "required": true,
       "unique": true
     },
-    "services": {
-      "via": "clients",
-      "collection": "service"
+    "client_projects": {
+      "via": "client",
+      "collection": "client-project"
     }
   }
 }

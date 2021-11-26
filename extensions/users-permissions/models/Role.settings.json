@@ -38,6 +38,10 @@
       "via": "role",
       "configurable": false,
       "plugin": "users-permissions"
+    },
+    "client_projects": {
+      "via": "users_permissions_role",
+      "collection": "client-project"
     }
   }
 }

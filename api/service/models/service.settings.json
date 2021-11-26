@@ -20,11 +20,6 @@
     "front_page_projects": {
       "via": "services",
       "collection": "front-page-projects"
-    },
-    "clients": {
-      "collection": "client",
-      "via": "services",
-      "dominant": true
     }
   }
 }

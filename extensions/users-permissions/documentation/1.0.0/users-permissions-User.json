@@ -1250,31 +1250,6 @@
                 "type": "string"
               }
             }
-          },
-          "client": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "clientname": {
-                "type": "string"
-              },
-              "user": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           }
         }
       },
@@ -1315,9 +1290,6 @@
             "default": false
           },
           "role": {
-            "type": "string"
-          },
-          "client": {
             "type": "string"
           },
           "created_by": {

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "name": "client"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "services": {
+      "via": "clients",
+      "collection": "service"
+    }
+  }
+}

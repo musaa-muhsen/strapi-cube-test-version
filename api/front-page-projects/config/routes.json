@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/front-page-projects",
+      "handler": "front-page-projects.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/front-page-projects/count",
+      "handler": "front-page-projects.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/front-page-projects/:id",
+      "handler": "front-page-projects.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/front-page-projects",
+      "handler": "front-page-projects.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/front-page-projects/:id",
+      "handler": "front-page-projects.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/front-page-projects/:id",
+      "handler": "front-page-projects.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "front_page_projects",
+  "info": {
+    "name": "front page projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "services": {
+      "via": "front_page_projects",
+      "collection": "service",
+      "dominant": true
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "name": "service",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "service": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "front_page_projects": {
+      "via": "services",
+      "collection": "front-page-projects"
+    },
+    "clients": {
+      "collection": "client",
+      "via": "services",
+      "dominant": true
+    }
+  }
+}
